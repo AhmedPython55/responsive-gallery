@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive gallery</title>
+    <style>
+        body{
+            flex-direction: column;
+            font-family: sans-serif;
+            justify-content: center;
+            max-width: 1200px;
+            margin:auto 10%;
+
+        }
+        #grid{
+            display: grid;
+            width: 100%;
+            margin: 20px auto;
+            grid-template-columns:repeat(5 , 16.8%) ;
+            grid-auto-rows: 140px;
+            justify-content: space-between;
+            gap: 50px;
+            
+
+        }
+        #grid > div{
+            background: linear-gradient(rgb(0, 162, 255) 80% , white 20%);
+            border-radius: 10px;
+            width: 100%;
+            box-shadow: 0 0 5px gray;
+            align-items: flex-start;
+            text-align: center;
+            
+            
+        }
+        img{
+            height: 80%;
+            width: 100%;
+            align-self: flex-start;
+            justify-content: center;
+        }
+        div > p{
+            align-self: center;
+            margin: 7px auto;
+            height: 20%;
+        }
+        p,h1{
+            width: 100%;
+            margin: 20px auto;
+        }
+        
+        @media screen and (max-width: 768px){
+            #grid{
+                grid-template-columns:repeat(3, 30%);
+            }
+            
+        }
+        @media screen and (max-width: 450px) {
+            #grid {
+                width: 60%;
+                align-self: center;
+                grid-template-columns: 100% ;
+            }
+            h1{
+                text-align: center;
+            }
+            
+        }
+        
+
+
+    </style>
+</head>
+<h1>Gallery Heading</h1>
+<body>
+    <div id="grid">
+    <div>
+        <img src="placeholder-image.png">
+        <p>Image Title</p>
+    </div>
+    <div>
+        <img src="placeholder-image.png">
+        <p>Image Title</p>
+    </div>
+    <div>
+        <img src="placeholder-image.png">
+        <p>Image Title</p>
+    </div>
+    <div>
+        <img src="placeholder-image.png">
+        <p>Image Title</p>
+    </div>
+    <div>
+        <img src="placeholder-image.png">
+        <p>Image Title</p>
+    </div>
+    <div>
+        <img src="placeholder-image.png">
+        <p>Image Title</p>
+    </div>
+    <div>
+        <img src="placeholder-image.png">
+        <p>Image Title</p>
+    </div>
+    <div>
+        <img src="placeholder-image.png">
+        <p>Image Title</p>
+    </div>
+    <div>
+        <img src="placeholder-image.png">
+        <p>Image Title</p>
+    </div>
+    <div>
+        <img src="placeholder-image.png">
+        <p>Image Title</p>
+    </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget arcu dictum varius duis at consectetur lorem donec massa. Id consectetur purus ut faucibus pulvinar elementum integer. Vitae aliquet nec ullamcorper sit amet risus nullam eget. Cras sed felis eget velit aliquet sagittis id. Nam aliquam sem et tortor. Sit amet consectetur adipiscing elit. Tellus orci ac auctor augue mauris augue. Congue mauris rhoncus aenean vel. Ultrices neque ornare aenean euismod elementum. Vel eros donec ac odio tempor orci dapibus ultrices in. Habitant morbi tristique senectus et.</p>
+</body>
+</html>
